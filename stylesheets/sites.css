@@ -6,5 +6,25 @@ h1{
 
 h2{  color: rgb(129, 74, 2);
     font-family: sans-serif;
+    background-color: khaki;
     
 }
+
+#banner{
+    background-color: cadetblue;
+    text-align: center;
+    color: aliceblue;
+}
+ #nav{
+    background-color: cadetblue;
+    padding: 10px;
+    text-align: center;
+ }
+
+ #nav a{
+    color: aliceblue;
+    text-decoration-line: none;
+    font-size: larger;
+    margin-right: 10px;
+ }
+
