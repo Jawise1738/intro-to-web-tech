@@ -1,78 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us </title>
-    <link rel="stylesheet" href="stylesheets/sites.css"/>
-
+    
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/sites.css">
 </head>
+
 <body>
-    <!--Anchor tags used for Navigation -->
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    
+    <header id="header">
+        <div id="banner">
+            <img src="images/delights cafe logo.png" height="120" width="150">
+            
+        </div>
+        <nav id="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about_us.html" class="nav-link">About Us</a>
+            <a href="contact_us.html" class="nav-link">Contact Us</a>
+        </nav>
+    </header>
 
-    <h1>Contact Us</h1>
-    <hr/>
+    
+    
+    <main id="main">
+        <h1>Contact Us</h1>
+        <hr />
 
-    <h2>Location</h2>
-    <table>
-        <tr>
-            <th>Logo</th>
-            <th>Location</th>
-            <th>Opening Hours</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>    
-            <td>
-                <img src="images/cherrygardens.jpg" height="200" width="205" alt="logo 1"/>
-            </td>
-            <td>Cherry Gardens</td>
-            <td>9AM-3PM</td>
-            <td>cherrygardens@preservation.com</td>
-            <td>18769962715</td>
-        </tr>
-        <br>
-        <tr>
-            <td>
-                <img src="images/beverlyhills.jpg"  height="200" width="205" alt="logo 2"/>
-            </td>
-            <td>Beverly Hills</td>
-            <td>9AM-5PM</td>
-            <td>beverlyhillsbranch@preservation.com</td>
-            <td>18769962715</td>
-        </tr>
-        <tr>
-            <br>
-            <td>
-                <img src="images/montegobay.jpg" height="200" width="205" alt="logo 3"/>
-            </td>
-            <td>Montego Bay</td>
-            <td>9AM-5PM</td>
-            <td>mobaybranch@preservation.com</td>
-            <td>18769962715</td>
-        </tr>   
-    </table>
-    <h2>General Inquiries </h2>
-    <form action="confirmation.html">   
-        <label for="fullname" >Name: *</label><br>
-        <input  required ="text" id="fullname" name="fullname">
-        <br><br>
-        <label for="email">Email Address: * </label><br>
-        <input type="email" id="email" name="emailaddress">
-        <br><br>
-        <label>How did you here about us?: </label><br>
-        <input type="radio" value="Friend" name="employed"> Yes
-        <input type="radio" value="N" name="unemployed"> No
-        <br><br> 
-        <label for="inquiry"> State your inquiry *</label><br>
-        <textarea cols="50" rows="10" maxlength="150" id="inquiry" name="inquiry">
+       
+        <h2>Our Locations</h2>
+        <table>
+                <tr>
+                    <th>Logo</th>
+                    <th>Location</th>
+                    <th>Opening Hours</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="images/cherrygardens.jpg" height="200" width="205" alt="Cherry Gardens" />
+                    </td>
+                    <td>Cherry Gardens</td>
+                    <td>9 AM - 3 PM</td>
+                    <td>cherrygardens@preservation.com</td>
+                    <td>18769962715</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/beverlyhills.jpg" height="200" width="205" alt="Beverly Hills" />
+                    </td>
+                    <td>Beverly Hills</td>
+                    <td>9 AM - 5 PM</td>
+                    <td>beverlyhillsbranch@preservation.com</td>
+                    <td>18769962715</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/montegobay.jpg" height="200" width="205" alt="Montego Bay" />
+                    </td>
+                    <td>Montego Bay</td>
+                    <td>9 AM - 5 PM</td>
+                    <td>mobaybranch@preservation.com</td>
+                    <td>18769962715</td>
+                </tr>
+            </tbody>
+        </table>
 
-        </textarea>
+        
+        <h2>Customer Feedback</h2>
+        <form action="confirmation.html">
+            <p><strong>1. How often do you visit us?</strong></p>
+            <label>
+                <input type="radio" name="visit_frequency" value="Weekly"> Weekly
+            </label><br>
+            <label>
+                <input type="radio" name="visit_frequency" value="Monthly"> Monthly
+            </label><br>
+            <label>
+                <input type="radio" name="visit_frequency" value="Annually"> Annually
+            </label><br>
 
-        <input type="submit">
-    </form>
+            <p><strong>2. Would you recommend us to a friend?</strong></p>
+            <label>
+                <input type="radio" name="recommendation" value="Yes"> Yes
+            </label><br>
+            <label>
+                <input type="radio" name="recommendation" value="No"> No
+            </label><br>
+
+            <p><strong>3. How would you rate our food?</strong></p>
+            <label>
+                <input type="radio" name="food_rating" value="1"> 1
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="2"> 2
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="3"> 3
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="4"> 4
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="5"> 5
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="6"> 6
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="7"> 7
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="8"> 8
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="9"> 9
+            </label>
+            <label>
+                <input type="radio" name="food_rating" value="10"> 10
+            </label><br><br>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </main>
+
+    <footer id="footer">
+        <a href="http://www.amazon.com" target="_blank" rel="noopener noreferrer">Amazon</a> <br><br>
+        <a href="http://www.ebay.com" target="_blank" rel="noopener noreferrer">Ebay</a>
+        <p>&copy; 2025 Café Delights | All Rights Reserved</p>
+    </footer>
 </body>
+
 </html>
