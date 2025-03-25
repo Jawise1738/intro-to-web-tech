@@ -113,6 +113,7 @@ p {
     color: #FFEB3B; 
     text-decoration: none;
     font-size: 1.1em;
+    text-align: center;
 }
 
 #footer p:hover{
@@ -120,6 +121,7 @@ p {
     background-color: #FFEB3B;
     padding: 5px;
     border-radius: 3px;
+    text-align: center;
 
 }
 
